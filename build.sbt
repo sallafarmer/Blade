@@ -11,7 +11,8 @@ scalacOptions ++= Seq(
   "-deprecation",
   "-feature",
   "-unchecked",
-  "-Xfatal-warnings"
+  "-Xfatal-warnings",
+  "-target:jvm-1.8"
 )
 
 val sparkVersion = "2.3.0"
