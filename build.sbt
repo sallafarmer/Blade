@@ -21,6 +21,8 @@ val scalaLoggingVersion = "3.9.0"
 val json4sVersion = "3.5.3"
 val elasticVersion = "5.5.0"
 val typesafeVersion = "1.3.3"
+val kafkaVersion = "0.11.0.2"
+val azureEventHubVersion = "1.0.1"
 
 resolvers += "MavenRepository" at "https://mvnrepository.com/"
 
@@ -38,6 +40,10 @@ libraryDependencies ++= Seq(
 
   "org.elasticsearch" % "elasticsearch" % elasticVersion,
   "org.elasticsearch.client" % "transport" % elasticVersion,
+
+  "org.apache.kafka" %% "kafka" % kafkaVersion,
+
+  "com.microsoft.azure" % "azure-eventhubs" % azureEventHubVersion,
 
   "com.typesafe" % "config" % typesafeVersion
 
