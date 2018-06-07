@@ -6,7 +6,7 @@ import java.net.InetAddress
 import com.typesafe.config.ConfigFactory
 import org.elasticsearch.action.ActionResponse
 import org.elasticsearch.common.settings.Settings
-import org.elasticsearch.common.transport.InetSocketTransportAddress
+import org.elasticsearch.common.transport.TransportAddress
 import org.elasticsearch.common.xcontent.XContentType
 import org.elasticsearch.transport.client.PreBuiltTransportClient
 
@@ -24,7 +24,7 @@ object ESClient {
     .build();
   val client = new PreBuiltTransportClient(settings)
     .addTransportAddress(
-      new InetSocketTransportAddress(
+      new TransportAddress(
         InetAddress.getByName(config.getString("elastic.hosts")),
         9300))
 

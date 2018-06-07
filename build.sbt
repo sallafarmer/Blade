@@ -19,10 +19,11 @@ val slf4jVersion = "1.7.25"
 val logbackClassicVersion = "1.2.3"
 val scalaLoggingVersion = "3.9.0"
 val json4sVersion = "3.5.3"
-val elasticVersion = "5.5.0"
+val elasticVersion = "6.2.4"
 val typesafeVersion = "1.3.3"
 val kafkaVersion = "0.11.0.2"
 val azureEventHubVersion = "1.0.1"
+val azureEventHubSparkVersion = "2.3.1"
 
 resolvers += "MavenRepository" at "https://mvnrepository.com/"
 
@@ -44,6 +45,7 @@ libraryDependencies ++= Seq(
   "org.apache.kafka" %% "kafka" % kafkaVersion,
 
   "com.microsoft.azure" % "azure-eventhubs" % azureEventHubVersion,
+  "com.microsoft.azure" % "azure-eventhubs-spark_2.11" % azureEventHubSparkVersion,
 
   "com.typesafe" % "config" % typesafeVersion
 
