@@ -48,7 +48,7 @@ object TestEventHub extends LazyLogging {
       .setSasKeyName("RootManageSharedAccessKey").setSasKey("m5YILRETxAB116ob6Qd1KYoW2egAPCsoGThzmt/M3gA=")
 
     val partitionId = "0"
-    val fileBaseName = "/Users/sridharalla/git/Blade/out.log"
+    val fileBaseName = "out.log"
 
 
     println(s"Starting eventHub receiver, listing to partition $partitionId and outputing to $fileBaseName")
