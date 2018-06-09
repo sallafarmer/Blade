@@ -1,4 +1,4 @@
-package ca.farmersedge.blade.core.azure
+package ca.farmersedge.blade.source.azure
 
 import java.io.{BufferedOutputStream, FileOutputStream}
 import java.time.Instant

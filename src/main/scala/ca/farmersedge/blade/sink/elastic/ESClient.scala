@@ -1,4 +1,4 @@
-package ca.farmersedge.blade.core.elastic
+package ca.farmersedge.blade.sink.elastic
 
 import java.io.File
 import java.net.InetAddress

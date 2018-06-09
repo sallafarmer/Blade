@@ -1,6 +1,6 @@
 package ca.farmersedge.blade.core
 
-import ca.farmersedge.blade.core.elastic.ESClient
+import ca.farmersedge.blade.sink.elastic.ESClient
 import com.typesafe.scalalogging.LazyLogging
 
 object Driver extends LazyLogging {
