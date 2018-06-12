@@ -25,6 +25,8 @@ val typesafeVersion = "1.3.3"
 val kafkaVersion = "0.11.0.2"
 val azureEventHubVersion = "1.0.1"
 val azureEventHubSparkVersion = "2.3.1"
+val rabbitMQVersion = "5.2.0"
+val rabbitMQHttpVersion = "2.1.0.RELEASE"
 
 resolvers += "MavenRepository" at "https://mvnrepository.com/"
 
@@ -44,6 +46,9 @@ libraryDependencies ++= Seq(
   "org.elasticsearch.client" % "transport" % elasticVersion,
 
   "org.apache.kafka" %% "kafka" % kafkaVersion,
+
+  "com.rabbitmq" % "amqp-client" % rabbitMQVersion,
+  "com.rabbitmq" % "http-client" % rabbitMQHttpVersion,
 
   "com.microsoft.azure" % "azure-eventhubs" % azureEventHubVersion,
   "com.microsoft.azure" % "azure-eventhubs-spark_2.11" % azureEventHubSparkVersion,
